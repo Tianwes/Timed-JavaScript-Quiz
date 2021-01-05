@@ -1,0 +1,44 @@
+body{
+   margin: 0px;
+   padding: 1px;
+}
+
+.img{
+   width: 100%;
+   height: 100%;
+   opacity: 0.3;
+   display: inline;
+   position: absolute;
+   z-index: -1;
+}
+
+.hide{
+   display: none; 
+}
+
+.welcome-container, #quiz-container{
+   margin: 100px 130px;
+   padding: 25px 50px 25px;
+   background-color: aquamarine;
+   text-align: center;
+}
+
+p{
+   line-height: 26px;
+}
+
+#question{
+   margin-bottom: 20px;
+}
+
+.choices-div{
+   text-align: -webkit-center;
+}
+
+.btn{
+   /* background-color: red; */
+   margin-bottom: 10px;
+   display: block;
+   height: 30px;
+   width: 60%;
+}

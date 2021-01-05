@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <img src = "https://cdn.pixabay.com/photo/2016/11/24/20/48/programming-1857236_960_720.jpg" class="img" alt="codes"/>
+    <div class="container">
+        <div class="welcome-container" id="welcome-container">
+            <h1>Coding Quiz!</h1>
+            <h3>Can you get the highscore?</h3>
+            <p>Your score is the remaining time after all questions are answered. 
+                <br>
+                For each incorrect answer, 10 seconds will be removed from the countdown.
+                
+            </p>
+            <!-- add function you want to initiate when START button pressed -->
+            <button id="start-button">START</button>
+        </div>
+   
+
+    <div class="hide" id="quiz-container">
+        <div id="question">Question</div>
+        <div id="answer-buttons" class="choices-div">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+        </div>
+    </div>
+    <div class="hide" id="your-score">
+        <!-- <form action="/action_page.php"> -->
+            <label for="initials">Enter your initials</label><br>
+            <input type="text" id="initials-input"><br>
+            <button class="button" id="submit-initials-button">Add to Score Board</button>
+          <!-- </form> -->
+        <button class="button" id="replay-button">Replay Quiz</button>
+        <button class="button" id="clear-scores-button">Clear Highscores</button>
+    </div>
+    <div class="hide" id="scoreBoard">
+        <h1>Highscores!</h1>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
