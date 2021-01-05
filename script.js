@@ -1,16 +1,40 @@
 startButton = document.getElementById("start-button");
 startButton.addEventListener("click", startGame);
+// answerButton = document.getElementsByClassName("btn");
+// answerButton.addEventListener("click",setInterval);
 
-welcome = document.getElementById("welcome-container");
+homePage = document.getElementById("homePage-container");
+questionsStart = document.getElementById("questions-container");
 
-questionsStart = document.getElementById("quiz-container");
+const timerEl = document.getElementById("timer");
+
+// one minute
+const startingTime = 1;
+// 60 seconds
+var time = startingTime * 60;
+
+setInterval(runCountDown, 1000);
+
+function runCountDown(){
+    const minutes = Math.floor(time / 60);
+    var seconds = time % 60;
+    if (seconds < 10){
+        seconds = "0" + seconds;
+    }else{
+        seconds;
+    }
+    timerEl.innerHTML = minutes + ":" + seconds;
+    time--;
+}
 
 var questions = [
     { q: "Which is not a data type?",
         choices: {
-            1: "Boolean", 2: "String", 3: "Node", 4: "Array"
-        },
-        correctAnswer: "3"
+            1: "Boolean",
+            2: "String",
+            3: "Node",
+            4: "Array"
+        },  correctAnswer: "3"
     },
     { q: "Which symbol returns the division remainder?",
         choices: {
@@ -32,22 +56,32 @@ var questions = [
     }
 ];
 
-function WelcomePage(){
-    getElementById
-
-}
+// startClock();
 function startGame(){
-    welcome.classList.add("hide");
+    homePage.classList.add("hide");
     questionsStart.classList.remove("hide");
-    // setInterval(function(){ 
-    //     alert("Hello");
-    // }, 2000);
+    // timeDecrease();
+    // timer.innerHtml = 
     
 
 }
+
 // function startQuestions(){
 
 // }
+
+ // setInterval(function(){ 
+    //     for(var i = 0; i <= questions.length; i++){
+            
+
+            // questions[0];  
+
+        // i need to pass in an index into question and answer and go 
+        // down array after button clicks
+        // }
+        
+    // }, 6000);
+    
 
 
 

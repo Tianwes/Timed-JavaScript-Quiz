@@ -16,7 +16,7 @@ body{
    display: none; 
 }
 
-.welcome-container, #quiz-container{
+#homePage-container, #questions-container{
    margin: 100px 130px;
    padding: 25px 50px 25px;
    background-color: aquamarine;
@@ -25,6 +25,10 @@ body{
 
 p{
    line-height: 26px;
+}
+
+#timer{
+   float: right;
 }
 
 #question{
