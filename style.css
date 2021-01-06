@@ -23,6 +23,14 @@ body{
    text-align: center;
 }
 
+#question{
+   margin: 30px 300px;
+}
+
+#answer-buttons{
+   margin-bottom: 25px;
+}
+
 p{
    line-height: 26px;
 }
