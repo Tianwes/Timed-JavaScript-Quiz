@@ -6,7 +6,6 @@ body{
 .img{
    width: 100%;
    height: 100%;
-   opacity: 0.3;
    display: inline;
    position: absolute;
    z-index: -1;
@@ -18,13 +17,12 @@ body{
 
 #homePage-container, #questions-container{
    margin: 100px 130px;
-   padding: 25px 50px 25px;
-   background-color: aquamarine;
    text-align: center;
-}
-
-#question{
-   margin: 30px 300px;
+   background-color: snow;
+   border: 0px solid;
+   padding: 10px;
+   box-shadow: 5px 8px slategrey;
+   border-radius: 25px;
 }
 
 #answer-buttons{
@@ -37,10 +35,11 @@ p{
 
 #timer{
    float: right;
+   padding: 10px 25px 0px 0px;
 }
 
 #question{
-   margin-bottom: 20px;
+   /* margin-left: inherit; */
 }
 
 .choices-div{
@@ -48,9 +47,9 @@ p{
 }
 
 .btn{
-   /* background-color: red; */
    margin-bottom: 10px;
    display: block;
    height: 30px;
    width: 60%;
+   border-radius: 5px;
 }

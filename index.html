@@ -10,33 +10,67 @@
 </head>
 
 <body>
-    <img src = "https://cdn.pixabay.com/photo/2016/11/24/20/48/programming-1857236_960_720.jpg" class="img" alt="codes"/>
+    <img src = "https://cdn.pixabay.com/photo/2014/12/29/17/39/code-583073__340.jpg" class="img" alt="codes"/>
     <div class="container">
-        <div class="homePage-container" id="homePage-container">
-            <h1>Coding Quiz!</h1>
-            <h3>Can you get the highscore?</h3>
-            <p>Your score is the remaining time after all questions are answered. 
+        <!-- <div class="homePage-container" id="homePage-container"> -->
+            <!-- <h1>Coding Quiz!</h1>
+            <h3>Can you get the highscore?</h3> -->
+            <!-- <p>Your score is the remaining time after all questions are answered. 
                 <br>
                 For each incorrect answer, 10 seconds will be removed from the countdown.
                 
-            </p>
+            </p> -->
             <!-- add function you want to initiate when START button pressed -->
-            <button id="start-button">START</button>
+            <!-- <button id="start-button">START</button> -->
             
+            <div class="homePage-container card text-center" id="homePage-container">
+                <div class="card-header">
+                  Javascript Quiz!
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Can you get the highscore?</h5>
+                  <p class="card-text">Your score is the remaining time after all questions are answered. 
+                      <br>
+                      For each incorrect answer, 10 seconds will be removed from the countdown.
+                  </p>
+                  <button id="start-button">START</button>
+                </div>
+                <div class="card-footer text-muted">
+
+                </div>
+              </div>
 
         </div>
    
 
-    <div class="hide" id="questions-container">
+    <!-- <div class="hide" id="questions-container">
         <div id="timer">Countdown!</div>
-        <div id="question">Question</div>
-        <div id="answer-buttons" class="choices-div">
-            <button class="btn btn-1">Answer 1</button>
-            <button class="btn btn-2">Answer 2</button>
-            <button class="btn btn-3">Answer 3</button>
-            <button class="btn btn-4">Answer 4</button>
-        </div>
+        <div id="question">Question</div> -->
+        <!-- <div id="answer-buttons" class="choices-div">
+            <button class="btn" id = "option-1">Answer 1</button>
+            <button class="btn" id = "option-2">Answer 2</button>
+            <button class="btn" id = "option-3">Answer 3</button>
+            <button class="btn" id = "option-4">Answer 4</button>
+        </div> -->
     </div>
+
+    <div class="hide card text-center" id="questions-container">
+            <div class="timer" id="timer">Countdown!</div>
+        <!-- <div class="card-body"> -->
+          <h3 id="question"></h3>
+        <!-- </div> -->
+        <div id="answer-buttons" class="choices-div">
+            <button class="btn" id = "option-1"></button>
+            <button class="btn" id = "option-2"></button>
+            <button class="btn" id = "option-3"></button>
+            <button class="btn" id = "option-4"></button>
+        </div>
+        <div class="card-footer">
+            <button class="prevBtn" id = "prevQ-button">Previous</button>
+            <button class="nextBtn" id = "prevQ-button">Next</button>
+        </div>
+      </div>
+
     <div class="hide" id="your-score">
         <!-- <form action="/action_page.php"> -->
             <label for="initials">Enter your initials</label><br>
