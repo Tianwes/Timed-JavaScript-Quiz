@@ -2,91 +2,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-    <img src = "https://cdn.pixabay.com/photo/2014/12/29/17/39/code-583073__340.jpg" class="img" alt="codes"/>
-    <div class="container">
-        <!-- <div class="homePage-container" id="homePage-container"> -->
-            <!-- <h1>Coding Quiz!</h1>
+  <img src="https://cdn.pixabay.com/photo/2014/12/29/17/39/code-583073__340.jpg" class="img" alt="codes" />
+  <div class="container">
+    <!-- <div class="homePage-container" id="homePage-container"> -->
+    <!-- <h1>Coding Quiz!</h1>
             <h3>Can you get the highscore?</h3> -->
-            <!-- <p>Your score is the remaining time after all questions are answered. 
+    <!-- <p>Your score is the remaining time after all questions are answered. 
                 <br>
                 For each incorrect answer, 10 seconds will be removed from the countdown.
                 
             </p> -->
-            <!-- add function you want to initiate when START button pressed -->
-            <!-- <button id="start-button">START</button> -->
-            
-            <div class="homePage-container card text-center" id="homePage-container">
-                <div class="card-header">
-                  Javascript Quiz!
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Can you get the highscore?</h5>
-                  <p class="card-text">Your score is the remaining time after all questions are answered. 
-                      <br>
-                      For each incorrect answer, 10 seconds will be removed from the countdown.
-                  </p>
-                  <button id="start-button">START</button>
-                </div>
-                <div class="card-footer text-muted">
+    <!-- add function you want to initiate when START button pressed -->
+    <!-- <button id="start-button">START</button> -->
 
-                </div>
-              </div>
-
-        </div>
-   
-
-    <!-- <div class="hide" id="questions-container">
-        <div id="timer">Countdown!</div>
-        <div id="question">Question</div> -->
-        <!-- <div id="answer-buttons" class="choices-div">
-            <button class="btn" id = "option-1">Answer 1</button>
-            <button class="btn" id = "option-2">Answer 2</button>
-            <button class="btn" id = "option-3">Answer 3</button>
-            <button class="btn" id = "option-4">Answer 4</button>
-        </div> -->
-    </div>
-
-    <div class="hide card text-center" id="questions-container">
-            <div class="timer" id="timer">Countdown!</div>
-        <!-- <div class="card-body"> -->
-          <h3 id="question"></h3>
-        <!-- </div> -->
-        <div id="answer-buttons" class="choices-div">
-            <button class="btn" id = "option-1"></button>
-            <button class="btn" id = "option-2"></button>
-            <button class="btn" id = "option-3"></button>
-            <button class="btn" id = "option-4"></button>
-        </div>
-        <div class="card-footer">
-            <button class="prevBtn" id = "prevQ-button">Previous</button>
-            <button class="nextBtn" id = "prevQ-button">Next</button>
-        </div>
+    <div class="homePage-container card text-center" id="homePage-container">
+      <div class="card-header">
+        Javascript Quiz!
       </div>
-
-    <div class="hide" id="your-score">
-        <!-- <form action="/action_page.php"> -->
-            <label for="initials">Enter your initials</label><br>
-            <input type="text" id="initials-input"><br>
-            <button class="button" id="submit-initials-button">Add to Score Board</button>
-          <!-- </form> -->
-        <button class="button" id="replay-button">Replay Quiz</button>
-        <button class="button" id="clear-scores-button">Clear Highscores</button>
+      <div class="card-body">
+        <h5 class="card-title">Can you get the highscore?</h5>
+        <p class="card-text">Your score is the remaining time after all questions are answered.
+          <br>
+          For each incorrect answer, 10 seconds will be removed from the countdown.
+        </p>
+        <button id="start-button">START</button>
+      </div>
+      <div class="card-footer text-muted">
+      </div>
     </div>
-    <div class="hide" id="scoreBoard">
-        <h1>Highscores!</h1>
+  </div>
+  </div>
+
+  <div class="hide card text-center" id="questions-container">
+    <div class="timer" id="timer">Countdown!</div>
+    <!-- <div class="card-body"> -->
+    <h3 id="question">Question?</h3>
+    <!-- </div> -->
+    <div id="answer-buttons" class="choices-div">
+      <button class="btn option" data-number="1" id="option-1">A</button>
+      <button class="btn option" data-number="2" id="option-2">B</button>
+      <button class="btn option" data-number="3" id="option-3">C</button>
+      <button class="btn option" data-number="4" id="option-4">D</button>
     </div>
-</div>
+    <div class="card-footer">
+      <button class="prevBtn" id="prevQ-button">Previous</button>
+      <button class="nextBtn" id="prevQ-button">Next</button>
+    </div>
+  </div>
+
+  <div class="hide" id="your-score">
+    <!-- <form action="/action_page.php"> -->
+    <label for="initials">Enter your initials</label><br>
+    <input type="text" id="initials-input"><br>
+    <button class="button" id="submit-initials-button">Add to Score Board</button>
+    <!-- </form> -->
+    <button class="button replay-button" id="replay-button">Replay Quiz</button>
+    <button class="button clear-scores-button" id="clear-scores-button">Clear Highscores</button>
+  </div>
+  <div class="hide" id="scoreBoard">
+    <h1>Highscores!</h1>
+  </div>
+  </div>
 
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -37,10 +37,10 @@ p{
    float: right;
    padding: 10px 25px 0px 0px;
 }
-
+/* 
 #question{
-   /* margin-left: inherit; */
-}
+   margin-left: inherit;
+} */
 
 .choices-div{
    text-align: -webkit-center;
