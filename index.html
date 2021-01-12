@@ -4,9 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Javascript Quiz!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,7 +30,7 @@
 
     <div class="homePage-container card text-center" id="homePage-container">
       <div class="card-header">
-        Javascript Quiz!
+        [ Javascript Quiz! ]
       </div>
       <div class="card-body">
         <h5 class="card-title">Can you get the highscore?</h5>
@@ -33,9 +38,10 @@
           <br>
           For each incorrect answer, 10 seconds will be removed from the countdown.
         </p>
-        <button id="start-button">START</button>
+        
       </div>
       <div class="card-footer text-muted">
+        <button class="hover" id="start-button">START</button>
       </div>
     </div>
   </div>
@@ -63,15 +69,43 @@
 
   <div class="hide" id="your-score">
     <!-- <form action="/action_page.php"> -->
-    <label for="initials">Enter your initials</label><br>
+    <label for="initials" class="int-text">[ Enter your initials ] <br>
+    <p class="int-text-line2">See where you rank.</p></label><br>
     <input type="text" id="initials-input"><br>
     <button class="button" id="submit-initials-button">Add to Score Board</button>
     <!-- </form> -->
     <button class="button replay-button" id="replay-button">Replay Quiz</button>
     <button class="button clear-scores-button" id="clear-scores-button">Clear Highscores</button>
   </div>
+  <!-- Highscores Div  -->
   <div class="hide" id="scoreBoard">
-    <h1>Highscores!</h1>
+    <div class="highscores-container card text-center" id="highscores-container">
+      <div class="card-header">
+        [ High Scores ]
+      </div>
+      <div class="card-body">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Quizee</th>
+            <th scope="col">Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>PlayerInitials</td>
+            <td>ScoreTime</td>
+          </tr>
+        </tbody>
+    </table>
+      </div>
+      <div class="card-footer text-muted">
+        <button class="button replay-button" id="replay-button">Replay Quiz</button>
+        <button class="button clear-scores-button" id="clear-scores-button">Clear Highscores</button>
+      </div>
+    </div>
+  
   </div>
   </div>
 
