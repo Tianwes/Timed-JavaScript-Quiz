@@ -15,7 +15,7 @@ body{
    display: none; 
 }
 
-#homePage-container, #questions-container{
+#homePage-container, #questions-container, #your-score{
    margin: 100px 130px;
    text-align: center;
    background-color: snow;
