@@ -2,20 +2,16 @@ body{
    margin: 0px;
    padding: 1px;
 }
-
+/* Backgroung image  */
 .img{
-   width: 100%;
-   height: 100%;
+   width: 99.9%;
+   height: 1000px;
    display: inline;
    position: absolute;
    z-index: -1;
 }
-
-.hide{
-   display: none; 
-}
-
-#homePage-container, #questions-container, #your-score{
+/* Containers for each sequence */
+#homePage-container, #questions-container, #timesUp, #enter-int, #your-score, #scoreBoard{
    margin: 100px 130px;
    text-align: center;
    background-color: snow;
@@ -24,22 +20,28 @@ body{
    box-shadow: 5px 8px slategrey;
    border-radius: 25px;
 }
-
+/* Class on containers  */
+.hide{
+   display: none; 
+}
+/* HomePage and HighScore container Headers  */
 .card-header{
    font-family: 'JetBrains Mono', monospace;
     font-weight: bold;
     color: saddlebrown;
     text-shadow: 2px 3px royalblue;
     font-size: xxx-large;
-
 }
+
+/* *****  HomePage Start   *****  */
+/* HomePage Card title  */
 .card-title{
    font-family: 'Space Mono', monospace;
    font-size: x-large;
    color: darkcyan;
    text-shadow: 2px 2px darksalmon;
-
 }
+/* Home page Start Game button  */
 #start-button{
    margin-bottom: 25px;
    margin-top: 15px;
@@ -49,22 +51,40 @@ body{
    width: 178px;
    font-family: 'Space Mono', monospace;
    font-weight: bold;
-
 }
 #start-button:hover{
    background-color: darkolivegreen;
    color:goldenrod;
 }
-
-#answer-buttons{
-   margin-bottom: 25px;
-  
-}
-
-p{
+/* HomePage para  */
+.card-text{
    line-height: 26px;
    font-family: 'JetBrains Mono', monospace;
+}
 
+/*   *****    Quiz container    *****
+ answer buttons container*/
+#answer-buttons{
+   margin-bottom: 25px;
+   text-align: -webkit-center;
+  
+}
+/* individual buttons  */
+.btn{
+   margin-bottom: 10px;
+   display: block;
+   height: 30px;
+   width: 60%;
+   border-radius: 5px;
+   font-family: 'JetBrains Mono', monospace;
+   background-color: antiquewhite;
+}
+.btn:hover{
+   background-color:burlywood;
+}
+/* Option buttons - nixes border around "previously selected" answers */
+.btn:focus{
+   box-shadow: none;
 }
 
 #timer{
@@ -78,33 +98,32 @@ p{
    font-family: 'Lekton', sans-serif;
 }
 
-.choices-div{
-   text-align: -webkit-center;
+/* *****   Enter player info container   *****  */
+/* Your Score is title  */
+.yourScoreIs{
+   font-size: 30px;
 }
-
-.btn{
-   margin-bottom: 10px;
-   display: block;
-   height: 30px;
-   width: 60%;
-   border-radius: 5px;
+#scoreNumGoesHere{
+   font-size: 45px;
+}
+/* Text above input box  */
+.int-text{
    font-family: 'JetBrains Mono', monospace;
-   background-color: antiquewhite;
+   text-shadow: 2px 2px darksalmon;
+   font-size: 25px;
+   margin-top:25px;
 }
-.btn:hover{
-   background-color:burlywood;
+.int-text-line2{
+   font-family: 'JetBrains Mono', monospace;
+   text-shadow: 2px 2px darksalmon;
+   font-size: 18px;
+   margin-bottom: 10px;
 }
-
-#your-score{
-   height: 285px;
-   padding-top: 55px;
-
-}
-
+/* Input box  */
 #initials-input{
    margin-bottom: 15px;
-
 }
+/* Submit score button  */
 #submit-initials-button{
    display: block;
    margin: auto;
@@ -123,7 +142,7 @@ p{
    font-weight: bold;
 }
 
-#replay-button, #clear-scores-button{
+/* #replay-button, #clear-scores-button{
    background-color: goldenrod;
    border-radius: 5px;
    width: 154px;
@@ -139,24 +158,44 @@ p{
 #clear-scores-button:hover{
    background-color: darkolivegreen;
    color:goldenrod;
-}
+} */
 
-.int-text{
-   font-family: 'JetBrains Mono', monospace;
-   text-shadow: 2px 2px darksalmon;
+
+/* *****   Highscores container   *****  */
+/* Coder - Score titles */
+#boardTitles{
+   font-size: 25px;
+   margin-left: 34px;
+   font-weight: bold;
+   font-family: 'JetBrains Mono';
+   text-decoration: underline;
+   background-color: darkgrey;
+}
+/* Unordered List */
+#highScoresList{
+   list-style: none;
+   color: rgb(15, 18, 66);
+   margin-bottom: 30px;
    font-size: 25px;
 }
-.int-text-line2{
+/* Player initials and score appended from JS  */
+li.highScoresList{
+   padding-bottom: 10px;
    font-family: 'JetBrains Mono', monospace;
-   text-shadow: 2px 2px darksalmon;
-   font-size: 18px;
-   margin-bottom: -10px;
+}
+li.highScoresList:hover{
+   background-color: wheat;
+   font-size: 28px;
 }
 
-/* ***** Fonts ***** */
-/* Header  */
+/* ***** Fonts Used ***** */
+
+/*  Home Page and HighScores Headers, HomePage text, answer buttons
+      enter inits text, highScore titles and scores  */
 /* font-family: 'JetBrains Mono', monospace;
-/* Text and answers*/
+
+/*  THomePage Title, Start & submit inits buttons  */
 /* font-family: 'Space Mono', monospace; */ 
-/* Question */
+
+/*  Questions  */
 /* font-family: 'Lekton', sans-serif; */
