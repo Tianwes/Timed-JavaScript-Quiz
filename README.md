@@ -36,5 +36,7 @@ When the "start" button is pressed :
 
 ---
 ## Deployed application link
+https://tianwes.github.io/Code_Quiz_using_Web_APIs/
 
 ## GitHub Repository URL
+https://github.com/Tianwes/Code_Quiz_using_Web_APIs
