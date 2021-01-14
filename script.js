@@ -6,7 +6,6 @@ highScoreContainer = document.getElementById("your-score");
 initials = document.getElementById("initials-input");
 const timerEl = document.getElementById("timer");
 timesUpCont = document.getElementById("timesUp");
-// help bellow!
 scoreNumHere = document.getElementById("scoreNumGoesHere")
 scoreBoardCont = document.getElementById("scoreBoard");
 coderInt = document.getElementById("coderInt");
@@ -43,7 +42,7 @@ var questionsArr = [
         question: "Fixed values are called?", option1: "Literals", option2: "Variables", option3: "Operators", option4: "Arrays", correctAnswer: "1"
     }
 ];
-
+// Game starts when button is pressed (called above)
 function startGame() {
     timeInterval = setInterval(startTimer, 1000);
     insertQuestion();
@@ -62,7 +61,6 @@ function startTimer() {
     if (seconds < 10) {
         seconds = "0" + seconds;
     }
-
     if (time <= 0) {
         timerEl.innerHTML = "OH NO! Time's Up!";
         quizStart.classList.add("hide");
@@ -76,24 +74,20 @@ function startTimer() {
 
 function insertQuestion() {
     possibleQuestions = [...questionsArr];
-    // console.log(possibleQuestions)
+    console.log(possibleQuestions);
     loadNextQuestion();
 }
-// function deductTime() {
-//     if(time -= 10){
-//     timerEl.innerText = timeInterval + time ;
-// }
-// }
+
 function checkanswer(value) {
     if (currentQuestion.correctAnswer == value) {
         loadNextQuestion();
-    }
-    else {
+    }else {
         time = time - 9;
         timerEl.innerHTML ="0:" + time;
         loadNextQuestion();
     }
 }
+
 function loadNextQuestion() {
     var numOfQuestions = possibleQuestions.length - 1;
     if (questionIndex < numOfQuestions) {
@@ -126,8 +120,10 @@ function highScoresPage() {
     // console.log(timerEl);
     scoreNumHere.innerText ="[" + time + "]";
 }
-const MAX_HIGHSCORES = 11;
-// Got some of code below with help of tutor 
+
+const MAX_HIGHSCORES = 10;
+
+// Got (some) of code below with help of tutor 
 function saveHighScore() {
     var highScoresArr = [];
     highScoresArr = JSON.parse(localStorage.getItem("highScores")) || [];
@@ -135,17 +131,18 @@ function saveHighScore() {
     // save initials of user
     var int = initials.value;
     var score = time;
-    // package 1 user initials with their score(time)
+    // packages 1 user's initials with their score(time)
     scoreObj = {
         int,
         score
     }
-    console.log(scoreObj);
+    // console.log(scoreObj);
+
     // push each individual user's initials and score to end of array of highscores
     highScoresArr.push(scoreObj);
     // stringify highscore 
     localStorage.setItem("highScores", JSON.stringify(highScoresArr));
-    console.log(localStorage);
+    // console.log(localStorage);
     printHighScores(highScoresArr);
 
 function printHighScores(highScoresArr) {
@@ -155,7 +152,7 @@ function printHighScores(highScoresArr) {
 
     // console.log(highScoresArr);
     highScoresArr.sort( (a, b) => b.score - a.score)
-    highScoresArr.splice(11);
+    highScoresArr.splice(10);
     
     // for each object created, make it a list and append
     highScoresArr.forEach(scoreObj => {

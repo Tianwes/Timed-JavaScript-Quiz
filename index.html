@@ -73,7 +73,7 @@
         <p class="card-text text-muted">["Need", "a", "coffee", "break", "?"]</p>
       </div>
       <div class="card-footer">
-        <p class="card-text">Refresh the page to try again</p>
+        <button id="replay-button" onClick="window.location.reload();">Replay Quiz!</button>      
       </div>
     </div>
   
@@ -91,8 +91,6 @@
     <input type="text" id="initials-input"><br>
     <!-- Submit initials button  -->
     <button class="button" id="submit-initials-button">Add to Score Board</button>
-    <!-- <button class="button replay-button" id="replay-button">Replay Quiz</button> -->
-    <!-- <button class="button clear-scores-button" id="clear-scores-button">Clear Highscores</button> -->
   </div>
 
   <!-- Leaderboard Container  -->
@@ -111,8 +109,7 @@
        </ul>
       </div>
       <div class="card-footer text-muted">
-        <!-- <button class="button replay-button" id="replay-button">Replay Quiz</button> -->
-        <!-- <button class="button clear-scores-button" id="clear-scores-button">Clear Highscores</button> -->
+        <button id="replay-button" onClick="window.location.reload();">Replay Quiz!</button>
       </div>
     </div>
 

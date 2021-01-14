@@ -41,8 +41,9 @@ body{
    color: darkcyan;
    text-shadow: 2px 2px darksalmon;
 }
-/* Home page Start Game button  */
-#start-button{
+/* Home page Start Game button
+& Time Ran out -replay button  */
+#start-button, #replay-button{
    margin-bottom: 25px;
    margin-top: 15px;
    background-color: goldenrod;
