@@ -1,10 +1,10 @@
-# Code_Quiz_using_Web_APIs
+# Timed-Javascript-Quiz
 This is an application using web APIs accessed with Javascript to run a quiz asking a player questions about Javascript. 
 
 ## How it should run 
 When the "start" button is pressed :
 * A card should appear with a Javascript trivia question
-- a 60 secon timer will start counting down
+- a 60 second timer will start counting down
 - if the question is answered correctly
   -  the next question will appear
 - if the question is answered incorrectly
@@ -36,10 +36,10 @@ When the "start" button is pressed :
 
 ---
 ## Deployed application link
-https://tianwes.github.io/Code_Quiz_using_Web_APIs/
+https://tianwes.github.io/Timed-JavaScript-Quiz/
 
 ## GitHub Repository URL
-https://github.com/Tianwes/Code_Quiz_using_Web_APIs
+https://github.com/Tianwes/Timed-JavaScript-Quiz
 
 ---
 
