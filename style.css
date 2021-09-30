@@ -7,7 +7,7 @@ body{
    width: 99.9%;
    height: 1000px;
    display: inline;
-   position: absolute;
+   position: fixed;
    z-index: -1;
 }
 /* Containers for each sequence */
@@ -187,6 +187,14 @@ li.highScoresList{
 li.highScoresList:hover{
    background-color: wheat;
    font-size: 28px;
+}
+
+footer{
+   text-align: -webkit-center;
+}
+
+#attribute-link{
+   color: royalblue;
 }
 
 /* ***** Fonts Used ***** */
